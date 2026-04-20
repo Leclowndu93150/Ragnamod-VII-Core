@@ -6,11 +6,15 @@
   "refmap": "ragnamod_vii_core.refmap.json",
   "mixins": [
     "AcidFluidMixin",
-    "BlockEntityTypeMixin"
+    "BlockEntityTypeMixin",
+    "BlockIronFurnaceBaseMixin"
   ],
   "client": [
     "SheetsMixin",
-    "SignRendererMixin"
+    "SignRendererMixin",
+    "RecipeCategoryGeneratorRegularMixin",
+    "RecipeCategoryGeneratorBlastingMixin",
+    "RecipeCategoryGeneratorSmokingMixin"
   ],
   "injectors": {
     "defaultRequire": 1
