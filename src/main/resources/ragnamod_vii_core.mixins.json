@@ -14,7 +14,10 @@
     "SignRendererMixin",
     "RecipeCategoryGeneratorRegularMixin",
     "RecipeCategoryGeneratorBlastingMixin",
-    "RecipeCategoryGeneratorSmokingMixin"
+    "RecipeCategoryGeneratorSmokingMixin",
+    "tconplanner.ModifierStackMixin",
+    "tconplanner.ToolValidatorMixin",
+    "tconplanner.ModifierPanelMixin"
   ],
   "injectors": {
     "defaultRequire": 1
