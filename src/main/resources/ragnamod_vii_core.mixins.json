@@ -10,6 +10,7 @@
     "BlockIronFurnaceBaseMixin"
   ],
   "client": [
+    "GoldenLassoMixin",
     "SheetsMixin",
     "SignRendererMixin",
     "RecipeCategoryGeneratorRegularMixin",
