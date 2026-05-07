@@ -8,9 +8,15 @@
     "AcidFluidMixin",
     "BlockEntityTypeMixin",
     "BlockIronFurnaceBaseMixin",
-    "GoldenLassoMixin"
+    "GoldenLassoMixin",
+    "alchemistry.AbstractProcessingBlockEntityMixin",
+    "alchemistry.AbstractInventoryBlockEntityMixin",
+    "alchemistry.AbstractFluidBlockEntityMixin",
+    "alchemistry.DissolverBlockEntityAccessor",
+    "alchemistry.DissolverBlockEntityMixin"
   ],
   "client": [
+    "FramedModelGetSpriteDataMixin",
     "SheetsMixin",
     "SignRendererMixin",
     "RecipeCategoryGeneratorRegularMixin",

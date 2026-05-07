@@ -184,6 +184,14 @@ dependencies {
     implementation fg.deobf("curse.maven:tinkers-planner-519973:4287330")
 
     runtimeOnly fg.deobf("curse.maven:framedblocks-441647:4567924")
+
+    compileOnly fg.deobf("curse.maven:functional-storage-556861:5271589")
+    compileOnly fg.deobf("curse.maven:alchemistry-293425:4770591")
+    compileOnly fg.deobf("curse.maven:alchemylib-293426:4655485")
+    runtimeOnly fg.deobf("curse.maven:alchemistry-293425:4770591")
+    runtimeOnly fg.deobf("curse.maven:alchemylib-293426:4655485")
+    runtimeOnly fg.deobf("curse.maven:chemlib-340666:4770566")
+    runtimeOnly fg.deobf("curse.maven:mekanism-268560:3875976")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
