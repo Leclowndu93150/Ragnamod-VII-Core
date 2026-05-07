@@ -13,7 +13,9 @@
     "alchemistry.AbstractInventoryBlockEntityMixin",
     "alchemistry.AbstractFluidBlockEntityMixin",
     "alchemistry.DissolverBlockEntityAccessor",
-    "alchemistry.DissolverBlockEntityMixin"
+    "alchemistry.DissolverBlockEntityMixin",
+    "pipez.PipeLogicTileEntityMixin",
+    "pipez.ItemPipeTypeMixin"
   ],
   "client": [
     "FramedModelGetSpriteDataMixin",

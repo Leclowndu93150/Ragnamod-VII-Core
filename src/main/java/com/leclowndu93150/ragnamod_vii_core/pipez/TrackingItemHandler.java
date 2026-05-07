@@ -1,0 +1,53 @@
+package com.leclowndu93150.ragnamod_vii_core.pipez;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.items.IItemHandler;
+import org.jetbrains.annotations.NotNull;
+
+public class TrackingItemHandler implements IItemHandler {
+
+    private final IItemHandler delegate;
+    private final Runnable onSuccess;
+
+    public TrackingItemHandler(IItemHandler delegate, Runnable onSuccess) {
+        this.delegate = delegate;
+        this.onSuccess = onSuccess;
+    }
+
+    @Override
+    public int getSlots() {
+        return delegate.getSlots();
+    }
+
+    @Override
+    @NotNull
+    public ItemStack getStackInSlot(int slot) {
+        return delegate.getStackInSlot(slot);
+    }
+
+    @Override
+    @NotNull
+    public ItemStack insertItem(int slot, @NotNull ItemStack stack, boolean simulate) {
+        return delegate.insertItem(slot, stack, simulate);
+    }
+
+    @Override
+    @NotNull
+    public ItemStack extractItem(int slot, int amount, boolean simulate) {
+        ItemStack result = delegate.extractItem(slot, amount, simulate);
+        if (!simulate && !result.isEmpty()) {
+            onSuccess.run();
+        }
+        return result;
+    }
+
+    @Override
+    public int getSlotLimit(int slot) {
+        return delegate.getSlotLimit(slot);
+    }
+
+    @Override
+    public boolean isItemValid(int slot, @NotNull ItemStack stack) {
+        return delegate.isItemValid(slot, stack);
+    }
+}
