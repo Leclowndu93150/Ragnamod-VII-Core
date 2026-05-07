@@ -11,7 +11,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import team.lodestar.lodestone.setup.LodestoneBlockEntityRegistry;
 
@@ -21,6 +23,7 @@ import java.util.Set;
 @Mod("ragnamod_vii_core")
 public class RagnamodVIICore {
     public RagnamodVIICore() {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CoreConfig.SPEC, "ragnamod_vii_core-common.toml");
     }
 
     @Mod.EventBusSubscriber(modid = "ragnamod_vii_core", bus = Mod.EventBusSubscriber.Bus.MOD)

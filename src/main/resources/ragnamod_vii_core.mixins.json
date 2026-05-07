@@ -7,10 +7,10 @@
   "mixins": [
     "AcidFluidMixin",
     "BlockEntityTypeMixin",
-    "BlockIronFurnaceBaseMixin"
+    "BlockIronFurnaceBaseMixin",
+    "GoldenLassoMixin"
   ],
   "client": [
-    "GoldenLassoMixin",
     "SheetsMixin",
     "SignRendererMixin",
     "RecipeCategoryGeneratorRegularMixin",
